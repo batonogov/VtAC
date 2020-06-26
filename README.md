@@ -3,7 +3,7 @@
 Cron внутри контейнера выполняет скрипт, который ходит на $CIFS_PATH с $CIFS_USER и $CIFS_PASS раз в 10 минут и конвертирует все находящиеся там mp4 файлы в mp3 удаляя оригиналы. 
 
 Запуск:
-docker run \
+"docker run \
     -it \
     --name converter \
     --privileged \
@@ -12,4 +12,4 @@ docker run \
     -e CIFS_USER=login \
     -e CIFS_PASS=password \
     -d \
-    batonogov/vac
+    batonogov/vac"
