@@ -27,6 +27,6 @@ COPY convert.py /
 
 RUN chmod +x /entrypoint.sh && \
     chmod +x /start.sh && \
-    (crontab -l ; echo "* * * * * /start.sh") | crontab - 
+    (crontab -l ; echo "*/15 * * * * /start.sh") | crontab - 
 
 ENTRYPOINT /entrypoint.sh
