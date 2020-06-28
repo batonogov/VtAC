@@ -16,5 +16,4 @@ docker run \
     batonogov/vac
 ```
 
-https://github.com/batonogov/vac
-https://hub.docker.com/repository/docker/batonogov/vac/general
+[GitHub](https://github.com/batonogov/vac) [Docker Hub](https://hub.docker.com/repository/docker/batonogov/vac)
