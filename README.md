@@ -2,7 +2,7 @@
 
 Cron внутри контейнера выполняет скрипт, который ходит на $CIFS_PATH с $CIFS_USER и $CIFS_PASS и конвертирует все находящиеся там mp4 файлы в mp3 удаляя оригиналы. 
 
-Запуск:
+**Запуск:**
 ```
 docker run \
     -it \
@@ -16,5 +16,5 @@ docker run \
     batonogov/vac
 ```
 
-[GitHub](https://github.com/batonogov/vac) 
+[GitHub](https://github.com/batonogov/vac) : 
 [Docker Hub](https://hub.docker.com/repository/docker/batonogov/vac)
