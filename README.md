@@ -1,7 +1,5 @@
 # Video to Audio Converter
 
-https://github.com/batonogov/vac
-
 Cron внутри контейнера выполняет скрипт, который ходит на $CIFS_PATH с $CIFS_USER и $CIFS_PASS и конвертирует все находящиеся там mp4 файлы в mp3 удаляя оригиналы. 
 
 Запуск:
@@ -17,3 +15,6 @@ docker run \
     -d \
     batonogov/vac
 ```
+
+https://github.com/batonogov/vac
+https://hub.docker.com/repository/docker/batonogov/vac/general
