@@ -9,7 +9,6 @@ RUN apt update && \
         sox \
         libsox-fmt-all \
         cifs-utils \
-        curl \
         cron \
         -y && \
     apt clean
@@ -26,7 +25,6 @@ COPY start.sh /
 COPY convert.py /
 
 RUN chmod +x /entrypoint.sh && \
-    chmod +x /start.sh && \
-    (crontab -l ; echo "* * * * * /start.sh") | crontab - 
+    chmod +x /start.sh
 
 ENTRYPOINT /entrypoint.sh
