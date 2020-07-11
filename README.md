@@ -16,5 +16,10 @@ docker run \
     batonogov/vac
 ```
 
+**Логи**
+```
+cat /var/log/cron.log
+```
+
 [GitHub](https://github.com/batonogov/vac) | 
 [Docker Hub](https://hub.docker.com/repository/docker/batonogov/vac)
