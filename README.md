@@ -18,7 +18,7 @@ docker run \
 
 **Логи**
 ```
-cat /var/log/cron.log
+docker exec converter cat /var/log/cron.log
 ```
 
 [GitHub](https://github.com/batonogov/vac) | 
