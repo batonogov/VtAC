@@ -16,7 +16,7 @@ docker run \
     batonogov/vac
 ```
 
-**Логи**
+**Логи:**
 ```
 docker exec converter cat /var/log/cron.log
 ```
