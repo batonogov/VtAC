@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM batonogov/cron
 
 RUN apt update && \
     apt upgrade -y && \
@@ -9,7 +9,6 @@ RUN apt update && \
         sox \
         libsox-fmt-all \
         cifs-utils \
-        cron \
         -y && \
     apt clean
 
@@ -20,11 +19,4 @@ RUN pip3 install --upgrade pip && \
         moviepy && \
     rm -rf ~/.cache/pip
 
-COPY entrypoint.sh /
-COPY start.sh /
 COPY convert.py /
-
-RUN chmod +x /entrypoint.sh && \
-    chmod +x /start.sh
-
-ENTRYPOINT /entrypoint.sh
