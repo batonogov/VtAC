@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  vac:
+  converter:
     build: .
     container_name: vac
     privileged: true
