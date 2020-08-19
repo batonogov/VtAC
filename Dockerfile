@@ -18,5 +18,3 @@ RUN pip3 install --upgrade pip && \
         pysndfx \
         moviepy && \
     rm -rf ~/.cache/pip
-
-COPY convert.py /
