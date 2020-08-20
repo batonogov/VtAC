@@ -42,3 +42,6 @@ os.system('umount /tmp/lan')
 
 if os.path.exists('/tmp/lan'):
     os.rmdir('/tmp/lan')
+
+if len(files) == 0:
+    print('Файлов mp4 не обнаружено')
