@@ -36,7 +36,16 @@ while x < len(files):
     # Удаление лишних файлов
     os.remove(files[x][0:-4] + '.wav')
     os.remove(os.path.join(files[x]))
-    x = x + 1
+    x+=1
+
+x = 0
+files = glob.glob('*.ogg')
+# Перебираевм в цикле все файлы и конвертируем их в нужный формат
+while x < len(files):
+    print(files[x])
+    fx(files[x][0:-4] + '.ogg', files[x][0:-4] + '.mp3')
+    os.remove(files[x])
+    x+=1
 
 os.system('umount /tmp/lan')
 
@@ -44,4 +53,4 @@ if os.path.exists('/tmp/lan'):
     os.rmdir('/tmp/lan')
 
 if len(files) == 0:
-    print('Файлов mp4 не обнаружено')
+    print('Файлы не обнаружены')
