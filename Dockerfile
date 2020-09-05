@@ -1,7 +1,7 @@
 FROM batonogov/cron:1.1
 
 RUN apt update && \
-    apt upgrade -y && \
+    apt upgrade && \
     apt install \
         python3 \
         python3-pip \
@@ -10,9 +10,8 @@ RUN apt update && \
         libsox-fmt-all \
         cifs-utils \
         -y && \
-    apt clean
-
-RUN pip3 install --upgrade pip && \
+    apt clean && \
+    pip3 install --upgrade pip && \
     pip3 install \
         librosa \
         pysndfx \
