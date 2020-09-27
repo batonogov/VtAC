@@ -10,8 +10,9 @@ RUN apt update && \
         sox \
         libsox-fmt-all \
         cifs-utils \
-        -y && \
-    pip3 install --upgrade pip && \
+        -y
+
+RUN pip3 install --upgrade pip && \
     pip3 install \
         librosa \
         pysndfx \
