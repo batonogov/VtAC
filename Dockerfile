@@ -12,8 +12,7 @@ RUN apt update && \
         cifs-utils \
         -y
 
-RUN pip3 install --upgrade pip && \
-    pip3 install \
+RUN pip3 install \
         librosa \
         pysndfx \
         moviepy
