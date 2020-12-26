@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 services:
   converter:
     build: .
@@ -7,10 +7,11 @@ services:
     env_file:
       - secrets.env
     volumes:
-      - ./cron.hourly:/etc/cron.hourly
-      - ./cron.daily:/etc/cron.daily
-      - ./cron.weekly:/etc/cron.weekly
-      - ./cron.monthly:/etc/cron.monthly
-      - ./cron.reboot:/etc/cron.reboot
-      - ./logs:/var/log/cron
-    restart: unless-stopped:0
+      - ./cron/hourly:/etc/cron.hourly
+      - ./cron/daily:/etc/cron.daily
+      - ./cron/weekly:/etc/cron.weekly
+      - ./cron/monthly:/etc/cron.monthly
+      - ./cron/reboot:/etc/cron.reboot
+      - ./cron/start:/etc/cron.start
+      - ./cron/logs:/var/log/cron
+    restart: always
