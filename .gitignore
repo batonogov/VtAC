@@ -1,4 +1,4 @@
-logs/*
+logs/
 secrets.env
 clean.sh
 .DS_Store
